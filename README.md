@@ -1,16 +1,16 @@
 # EduScholar — Multi-Step Placement Test Engine
 
-Live Demo: soon  
-GitHub Repository: soon
+Live Demo: https://scholars-assesment.vercel.app  
+GitHub Repository: https://github.com/reysiregar/Scholars-Assesment
 
 ---
 
 ## Project Overview
 
 **EduScholar** is a modern, production-quality **Multi-Step Placement Test Engine** designed for prospective students and educational institutions. The application guides learners through a streamlined 3-step diagnostic experience:
-
-$$\text{Landing \& Biodata Registration} \longrightarrow \text{15-Question Placement Test} \longrightarrow \text{Result \& Program Recommendation}$$
-
+```text
+Landing & Biodata Registration ──▶ 15-Question Placement Test ──▶ Result & Program Recommendation
+```
 The platform delivers instant diagnostic scoring, accurate proficiency tiering (Beginner, Intermediate, Advanced), tailored curriculum recommendations, and a direct WhatsApp consultation CTA with pre-filled candidate metadata.
 
 ---
@@ -143,9 +143,9 @@ npm run preview
 
 This project includes a `vercel.json` configuration file with SPA rewrites to ensure direct route navigation (e.g. `/test`, `/result`) functions seamlessly without 404 errors:
 
-1. Push your repository to GitHub.
+1. Push this repository to GitHub.
 2. Sign in to [Vercel](https://vercel.com/) and click **"Add New Project"**.
-3. Import your GitHub repository.
+3. Import this repository.
 4. Keep the default build settings (`Framework Preset: Vite`, `Build Command: npm run build`, `Output Directory: dist`).
 5. Click **"Deploy"**.
 
@@ -170,9 +170,9 @@ Scoring is computed centrally in [`src/utils/scoring.js`](file:///src/utils/scor
 $$\text{Score} = \text{round}\left(\frac{\text{Correct Answers}}{15} \times 100\right)$$
 
 ### Level Thresholds:
-- **`0% – 40%` $\rightarrow$ Beginner Level**: Focuses on core grammar, basic tenses, and foundational vocabulary.
-- **`41% – 75%` $\rightarrow$ Intermediate Level**: Focuses on conditionals, complex connectors, and academic communication.
-- **`76% – 100%` $\rightarrow$ Advanced Level**: Focuses on executive rhetoric, subjunctive structures, and idiomatic precision.
+- **`0% – 40%` → Beginner Level**: Focuses on core grammar, basic tenses, and foundational vocabulary.
+- **`41% – 75%` → Intermediate Level**: Focuses on conditionals, complex connectors, and academic communication.
+- **`76% – 100%` → Advanced Level**: Focuses on executive rhetoric, subjunctive structures, and idiomatic precision.
 
 ---
 
