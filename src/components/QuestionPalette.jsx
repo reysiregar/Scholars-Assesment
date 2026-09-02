@@ -39,12 +39,9 @@ export function QuestionPalette({
               type="button"
               onClick={() => onSelectQuestion(idx)}
               aria-label={`Jump to Question ${idx + 1}: ${isAnswered ? "Answered" : "Not answered"}`}
-              className={`h-9 sm:h-10 rounded-xl border text-xs sm:text-sm flex items-center justify-center transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0b57d0] cursor-pointer relative ${btnClass}`}
+              className={`h-9 sm:h-10 rounded-xl border text-xs sm:text-sm flex items-center justify-center transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0b57d0] cursor-pointer ${btnClass}`}
             >
               <span>{idx + 1}</span>
-              {isAnswered && !isCurrent && (
-                <span className="absolute -top-1 -right-1 w-2 h-2 bg-[#146c2e] rounded-full border border-white" />
-              )}
             </button>
           );
         })}
