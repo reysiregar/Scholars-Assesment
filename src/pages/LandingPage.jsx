@@ -13,6 +13,7 @@ import {
   Phone,
   MapPin,
   RotateCcw,
+  Check,
 } from "lucide-react";
 import {
   getStoredBiodata,
@@ -177,8 +178,8 @@ export function LandingPage() {
         {existingResult ? (
           <div className="mb-8 p-4 sm:p-5 rounded-2xl bg-white border border-[#e1e8f2] shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#c4eed0] text-[#072100] flex items-center justify-center flex-shrink-0 font-bold">
-                ✓
+              <div className="w-10 h-10 rounded-xl bg-[#c4eed0] text-[#072100] flex items-center justify-center flex-shrink-0">
+                <Check className="w-5 h-5 text-[#146c2e]" strokeWidth={2.5} />
               </div>
               <div>
                 <h3 className="text-sm font-bold text-[#1f1f1f]">

@@ -92,11 +92,11 @@ export function RecommendationCard({ program }) {
                 const IconComponent = (iconName && BENEFIT_ICON_MAP[iconName]) || CheckCircle;
 
                 return (
-                  <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-[#1f1f1f]">
-                    <div className="w-5 h-5 rounded-md bg-[#c4eed0]/60 text-[#146c2e] flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <li key={idx} className="flex items-center gap-3 text-xs sm:text-sm text-[#1f1f1f]">
+                    <div className="w-6 h-6 rounded-lg bg-[#c4eed0]/70 text-[#146c2e] flex items-center justify-center flex-shrink-0">
                       <IconComponent className="w-3.5 h-3.5" />
                     </div>
-                    <span className="leading-snug break-words">{text}</span>
+                    <span className="flex-1 leading-snug break-words">{text}</span>
                   </li>
                 );
               })}
@@ -110,11 +110,11 @@ export function RecommendationCard({ program }) {
             </h3>
             <ul className="space-y-3">
               {program.curriculumHighlights?.map((topic, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-[#1f1f1f]">
-                  <span className="w-5 h-5 rounded-md bg-[#d3e3fd] text-[#041e49] text-[11px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+                <li key={idx} className="flex items-center gap-3 text-xs sm:text-sm text-[#1f1f1f]">
+                  <span className="w-6 h-6 rounded-lg bg-[#d3e3fd] text-[#041e49] text-xs font-bold flex items-center justify-center flex-shrink-0">
                     {idx + 1}
                   </span>
-                  <span className="leading-snug break-words">{topic}</span>
+                  <span className="flex-1 leading-snug break-words">{topic}</span>
                 </li>
               ))}
             </ul>
